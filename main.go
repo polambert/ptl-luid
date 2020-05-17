@@ -53,11 +53,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
         // Log the request IP, Port, User Agent, and request counter                                                     
         fmt.Printf("LUID Call: %-7d %-25s %s\n", requestCount, r.RemoteAddr, r.UserAgent())                              
         // fmt.Println("Request from", r.RemoteAddr, "         ", r.UserAgent(), requestCount)                           
-}                                                                                                                        
-                                                                                                                         
-func handleepic(w http.ResponseWriter, r *http.Request) {                                                                
-        fmt.Fprintf(w, "welcome to epic gamer games")                                                                    
-}                                                                                                                        
+}                                                                                                                     
                                                                                                                          
 func main() {                                                                                                            
         fmt.Println("Starting...")                                                                                       
